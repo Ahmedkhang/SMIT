@@ -293,8 +293,140 @@
 // }
 // console.log(new_arr);
 
-let city = 'Karachi';
-let user_city = prompt('Enter your city: ');
-if(user_city.trim().toLowerCase() === city.trim().toLowerCase()){
-    console.log('You are from Karachi');
+// let city = 'Karachi';
+// let user_city = prompt('Enter your city: ');
+// if(user_city.trim().toLowerCase() === city.trim().toLowerCase()){
+//     console.log('You are from Karachi');
+// }
+let first_name = 'ahmed'
+let second_name = 'hasan';
+let thrid_name = 'ur rehman';
+let fourth_name = 'ali';
+let para = "hey bro IRAN how are you doing iran man i am fine thank you i iran know u know Iran but i dont know what is iran behaviour but i cant modi ji see you  why coz you are black its not my fault" 
+const capitalize = (names) => {
+    
+let first_letter = names.slice(0,1).toUpperCase()
+let second_letter = names.slice(1).toLowerCase()
+full_name = first_letter + second_letter
+return full_name
 }
+
+// console.log(capitalize(first_name));
+// console.log(capitalize(second_name));
+// console.log(capitalize(thrid_name));
+// console.log(capitalize(fourth_name));
+// console.log(first_name.includes('a'))
+// // console.log(first_name.charAt(1))
+// console.log(first_name.indexOf('a'))
+// let check = para.indexOf('iran')
+// let check = para.indexOf('iran')
+// console.log('index: ',check)
+// let starting = para.slice(0,check)
+// console.log('Starting:',starting)
+
+// let ending = para.slice(check + 4)
+// console.log('Ending:',ending)
+// let final_output = starting + 'Indonesia ' + ending
+// console.log(final_output)
+// for(let i = 0; i< para.length; i++){
+//     // console.log(i)
+//     let a = para.slice(i, i+4);
+//     if(a === 'iran' || a === 'IRAN' || a === 'Iran'){
+//         console.log('Iran Found!!')
+//         let starting = para.slice(0,i);
+//         let ending = para.slice(i+4);
+//         para = starting + 'pakistan' + ending;
+
+//     }
+// }
+// console.log(para)
+// let my_arr = [1,2,3,4,5]
+// console.log(my_arr.length)
+    // console.log(para[i])
+// console.log(para.length)
+
+// let last_output = para.replace('behaviour','Iran')
+// console.log(last_output)
+// let f_arr = ['a','b','c','d']
+// let s_arr = [1,2,3,4,5]
+// let t_arr = []
+// for(let i = 0; i<s_arr.length;i++){
+//     // console.log(s_arr[i])
+//     for(let j=0; j<f_arr.length; j++){
+//         // console.log(t_arr.push(f_arr[i]+s_arr[j]))
+//         let s = s_arr[i] + f_arr[j]
+//         t_arr.push(s)
+//     }
+// }
+// console.log(t_arr)
+// let codes = '[#42$56][1#2&13][85#$58][@53$23][%1225#]'
+// let starting = '['
+// let ending = ']'
+// for(let i = 0; i< codes.length; i++){
+//     let len = codes.slice(i, i+8);
+//     
+//     // console.log(len)
+//     if(codes.includes(starting) && codes.includes(ending)){
+//         console.log(codes.split().join(''))
+//     }
+    
+// }s
+// ls
+// for(let i =0; i<1; i++
+
+// ){
+    
+// if(codes.includes(starting) && codes.includes(ending)){
+//         console.log(codes.split('[]').join('\n'))
+//     }
+// }
+// for(let i =0; i<codes.length; i++){
+//     let key = codes.slice(i,i+8)
+//     if(key.charAt(0) ==='[' && key.charAt(7) === ']'){
+//         console.log(key)
+//     }
+// }    
+// let rev_str = 'game';
+// // let res = rev_str.split('').reverse().join('')
+// console.log(res)
+
+//                     flatten array
+
+// let arr = [1,2,3,[4,5,[6,7,[4,5]]]]
+// let res = arr.flat(3)
+// let s = [...new Set(res)]
+// console.log(s)
+
+//                            Checking if object is empty
+
+// let my_arr = [1,2,3,4,3,2,2]
+// const sum = my_arr.reduce((acc,curr) => (
+//     curr > acc? curr: acc
+// )
+// )
+// let f_val = [...new Set(my_arr)]
+// console.log(f_val)
+// console.log(sum)
+
+//               Callback func
+
+// function greet(name_1,name_2){
+//     console.log(`My name is ${name_1} and his name is ${name_2}`)
+
+//     sayBye()
+// }
+// function sayBye(){
+//   console.log('Bye')
+//   sayNice()
+// }
+// function sayNice(){
+//     console.log('Nice To Meet You')
+// }
+// greet('arsii','ahmed')
+let a = 'madam'
+const isPalindrome = (str) => {
+    return str === str.split('').reverse().join('')
+    
+}
+console.log(isPalindrome(a))
+console.log(typeof null)

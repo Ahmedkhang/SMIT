@@ -181,15 +181,17 @@
 
 //                          task #20
 
+
 let first_names = ['Cool','Fast','Big'];
 let last_names = ['Bear','Tiger','Lion'];
 let full_name = []
 
 for(let i = 0; i < first_names.length; i++){
-    console.log(first_names[i] + ' ' + last_names[i]);
+    // console.log(first_names[i] + ' ' + last_names[j]);
     for(let j = 0; j<last_names.length; j++){
-        let merged_name = first_names[i]+' '+ last_names[i]
-        full_name.push(merged_name)
+        let merged_name = first_names[i]+' '+ last_names[j]
+        // full_name.push(merged_name)
+        console.log(merged_name);
     }
 }
-console.log(full_name);
+// console.log(full_name);

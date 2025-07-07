@@ -298,18 +298,18 @@
 // if(user_city.trim().toLowerCase() === city.trim().toLowerCase()){
 //     console.log('You are from Karachi');
 // }
-let first_name = 'ahmed'
-let second_name = 'hasan';
-let thrid_name = 'ur rehman';
-let fourth_name = 'ali';
-let para = "hey bro IRAN how are you doing iran man i am fine thank you i iran know u know Iran but i dont know what is iran behaviour but i cant modi ji see you  why coz you are black its not my fault" 
-const capitalize = (names) => {
+// let first_name = 'ahmed'
+// let second_name = 'hasan';
+// let thrid_name = 'ur rehman';
+// let fourth_name = 'ali';
+// let para = "hey bro IRAN how are you doing iran man i am fine thank you i iran know u know Iran but i dont know what is iran behaviour but i cant modi ji see you  why coz you are black its not my fault" 
+// const capitalize = (names) => {
     
-let first_letter = names.slice(0,1).toUpperCase()
-let second_letter = names.slice(1).toLowerCase()
-full_name = first_letter + second_letter
-return full_name
-}
+// let first_letter = names.slice(0,1).toUpperCase()
+// let second_letter = names.slice(1).toLowerCase()
+// full_name = first_letter + second_letter
+// return full_name
+// }
 
 // console.log(capitalize(first_name));
 // console.log(capitalize(second_name));
@@ -423,10 +423,89 @@ return full_name
 //     console.log('Nice To Meet You')
 // }
 // greet('arsii','ahmed')
-let a = 'madam'
-const isPalindrome = (str) => {
-    return str === str.split('').reverse().join('')
+// let a = 'madam'
+// const isPalindrome = (str) => {
+//     return str === str.split('').reverse().join('')
     
-}
-console.log(isPalindrome(a))
-console.log(typeof null)
+// }
+// console.log(isPalindrome(a))
+// console.log(typeof null)
+
+// let codes = '[#42$56][1#2&13][85#$58][@53$23][%1225#]'
+// for(let i = 0; i<codes.length; i++){
+//     let key = codes.slice(i,i+8)
+//     if(key.charAt(0) === '[' && key.charAt(7) === ']'){
+//         console.log(key)
+//     }
+// }
+// let arr = []
+// console.log(arr)
+
+// let par = 'lorem ipsum dolor sit amet iran adipisicing elit. Quisquam, Iran. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, IRAN.'
+// let s =par.toLowerCase()
+
+// console.log(s.replace('iran','Pakistan'))
+// const ul = document.querySelector('.ul');
+// ul.style.display = 'flex';
+// let my_arr = [3,4,5,6,];
+// console.log(my_arr.join('\n'))
+
+//                        ROundOF
+
+
+// 0.0,0.1,0.2,0.3,0.4 this value will rounded reverse like
+
+// let a =23.4
+// console.log(Math.round(a))
+// Output: 23
+
+// 0.5,0.6,0.7,0.8,0.9 this value will rounded forward like
+
+// let a = 23.5
+// console.log(Math.round(a))
+// Output: 24
+
+
+// let a = 23.3
+// let b = a*23/7.3
+// console.log(Math.round(b))
+
+// console.log(Math.ceil(b)) // Round up output 74
+// console.log(Math.floor(b)) // Round down output 73
+// // console.log(b)
+
+//  How to convert  a string to number in JS
+
+// let a = '1212.232';
+// console.log(Number(a))
+// console.log(+a)
+// console.log(parseInt(a)) // parseInt will remove the value after decimal point
+// console.log(parseFloat(a))
+
+// convert a number to string in JS
+
+// let a= 12
+// console.log(typeof String(a)) // Number will convert the number to string
+// console.log(typeof toString(a)) // Number will convert the number to string
+
+// let a = 231.211;
+// console.log(a.toFixed(2)) // toFixed will round the number to 2 decimal places but it will convert th number to string
+
+// let my_arr = [
+//     {name:'product1',price:123.54},
+//     {name:'product2',price:163.24},
+//     {name:'product3',price:183.511},
+//     {name:'product4',price:23.154},
+//     {name:'product5',price:93.64},
+//     {name:'product6',price:52.14},
+// ]
+// let cart = []
+// my_arr.forEach(function(item,index){
+//     console.log(index,item.name,item.price.toFixed(2))
+// })
+// let a = Math.random(); // Generates a random number between 0 and 1
+// a = Math.round(a)
+// let a = Math.floor(Math.random()*10)+1;
+// Generates a random number between 0 and 1
+// let a = Math.floor(Math.random()*100)+1
+// console.log(a) // Generates a random number between 0 and 1

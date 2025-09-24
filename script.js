@@ -505,7 +505,715 @@
 // })
 // let a = Math.random(); // Generates a random number between 0 and 1
 // a = Math.round(a)
-// let a = Math.floor(Math.random()*10)+1;
+// let a = Math.ceil(Math.random()*6);
 // Generates a random number between 0 and 1
 // let a = Math.floor(Math.random()*100)+1
 // console.log(a) // Generates a random number between 0 and 1
+
+
+//                       Chapter Date
+// console.log(new Date().now())
+// let a = new Date().getMonth() // since month starts from 0 so it will return 0 for January
+// let a = new Date().getFullYear() // it will return the current year
+// let a = new Date().getDate() // it will return the current date
+// console.log(a)
+// let date = new Date()
+// let current_hours = date.getHours();
+// let current_minutes = date.getMinutes();
+// let current_seconds = date.getSeconds();
+// let current_year = date.getFullYear()
+// let current_milliseconds = date.getMilliseconds()
+
+// let DOB = new Date('1/Jan/2000') // the 
+// let current_date =new Date().getTime();
+
+// let dob = DOB.getTime()
+// let diff = current_date - dob
+
+// console.log(diff/(1000*60*60*24*365))
+// console.log(current_hours,current_minutes,current_seconds)
+
+// let date = new Date();
+// console.log(date)
+// date.setDate(1)
+// date.setMonth(3)
+// date.setHours(11)
+// date.setMinutes(0)
+// date.setSeconds(0)
+// date.setUTCHours(5)
+// console.log(date)
+
+// let date = new Date();
+// date.getDate()
+// console.log(date)
+
+// let today_date = new Date("9-Jul-2025");
+// let ten_days_before = new Date(setDate(today_date.getDate()) -10);
+// console.log(ten_days_before);
+
+//                          chap 35
+
+// const Time = () => {
+//     let months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+//     let date = new Date();
+//     let current_hours = date.getHours();
+//     let current_minutes = date.getMinutes();
+//     let current_seconds = date.getSeconds();
+//     let day = date.getDate();
+//     let current_months = months[date.getMonth()]
+//     // console.log(current_months)
+//     let year = date.getFullYear();
+//     // console.log(`${current_hours}:${current_minutes}:${current_seconds} ${day} ${current_months} ${year}`)
+//     return `${current_hours}:${current_minutes}:${current_seconds} ${day} ${current_months} ${year}`
+
+
+// }
+// Time()
+// console.log(Time())
+// const add = (num1,num2) => {
+//    return num1 + num2
+// }
+// console.log(add(2,4))
+
+// function getValue(a,b,c,d){
+//     let result = a+b+c+d
+//     return result
+// }
+// let v = getValue(2,4,3,2)
+// console.log(v)
+
+// function gm_to_kg(a){
+
+//     return `${a / 1000}Kg`
+
+// }
+
+// console.log(gm_to_kg(200))
+
+// function square(a){
+//     return `The Square of ${a} is ${a*a}`
+// }
+// console.log(square(7))
+
+// function num_of_str(a){
+
+//     return a.length
+
+// }
+// console.log(num_of_str('hello'))
+
+// function reverse_str(str){
+//     return str.split('').reverse().join('')
+// }
+// console.log(reverse_str('hello'))
+
+// function is_palindrome(str){
+
+//     let f_str = str.toLowerCase()
+//     let l_str = f_str.split('').reverse().join('')
+//     return f_str === l_str
+        
+// }
+// console.log(is_palindrome('mada'))
+
+// function Capitalize(str){
+  
+//     let f_letter = str.charAt(0).toUpperCase()
+//     let rest_str = str.slice(1)
+//     return f_letter+rest_str
+// }
+// console.log(Capitalize('hello'))
+
+//                                               Switch Case
+
+// let st = 6
+// 1 = Approved
+// 2 = unApproved
+// 3 = pending
+// 4 = under process
+// 5 = Rejected
+
+// switch(st){
+//     case 1:
+//         console.log("User is Approved");
+//         break;
+//     case 2:
+//         console.log("User is Not Approved");
+//         break;
+//     case 3:
+//         console.log("User authentication is Pending");
+//         break;
+//     case 4:
+//         console.log("User Authentication is Under Process");
+//         break;
+//     case 5:
+//         console.log("User Is rejected");   
+//         break;
+//     default:
+//         console.log("Status Error")                 
+// }
+// let str ="23"
+
+// console.log(str.slice(0,1))
+
+// let a = 0
+// while(a<10){
+//     console.log("while" + a)
+//     a++
+// }
+
+
+//                      objects
+// let students = [
+    
+//  student_1 = {
+//     id:314,
+//     name:'Ahmed',
+//     course:'MWAD',
+//     fee:1035,
+//     feePaid:true,
+//     isStudent:true,
+//     age:16
+
+// },
+//  student_2 = {
+//     id:14,
+//     name:'khang',
+//     course:'MWAD',
+//     fee:1035,
+//     feePaid:true,
+//     isStudent:true,
+//     age:23
+
+// },
+//  student_3 = {
+//     id:314,
+//     name:'kaku',
+//     course:'Freelancing',
+//     fee:1035,
+//     feePaid:true,
+//     isStudent:true,
+//     age:14
+
+// },
+//  student_4 = {
+//     id:1114,
+//     name:'Lala',
+//     course:'MWAD',
+//     fee:1035,
+//     feePaid:true,
+//     isStudent:true,
+//     age:7
+
+// },
+//  student_5 = {
+//     id:314,
+//     name:'Hussain',
+//     course:'Graphic Designing',
+//     fee:1035,
+//     feePaid:false,
+//     isStudent:true,
+//     age:36
+
+// },
+//  student_6 = {
+//     id:22,
+//     name:'Shah g',
+//     course:'Graphic Designing',
+//     fee:1035,
+//     feePaid:true,
+//     isStudent:true,
+//     age:23
+
+// },
+//  student_7 = {
+//     id:32444,
+//     name:'Raja',
+//     course:'MWAD',
+//     fee:1035,
+//     feePaid:true,
+//     isStudent:true,
+//     age:19
+
+// },
+//  student_8 = {
+//     id:344,
+//     name:'khan',
+//     course:'Freelancing',
+//     fee:1035,
+//     feePaid:true,
+//     isStudent:false,
+//     age:18
+
+// },
+//  student_9 = {
+//     id:2214,
+//     name:'Hammad',
+//     course:'MWAD',
+//     fee:1035,
+//     feePaid:false,
+//     isStudent:true,
+//     age:16
+
+// },
+//  student_10 = {
+//     id:312,
+//     name:'KK BAkri',
+//     course:'MWAD',
+//     fee:1035,
+//     feePaid:true,
+//     isStudent:true,
+//     age:15
+
+// }
+
+// ]
+// let student_1 = {
+//     id:314,
+//     name:'Ahmed',
+//     course:'MWAD',
+//     fee:1035,
+//     feePaid:true,
+//     isStudent:true,
+//     age:16
+
+// }
+// let student_2 = {
+//     id:14,
+//     name:'khang',
+//     course:'MWAD',
+//     fee:1035,
+//     feePaid:true,
+//     isStudent:true,
+//     age:23
+
+// }
+
+// let total_students = [student_1,student_2]
+// for(let i = 0; i<total_students.length;i++){
+//     // console.log(students
+//     // let stu_info = students[i]
+//     let stu_info = total_students[i]
+//     // console.log(stu_info)
+//     if(stu_info.age >=18){
+//         console.log('AGe !8+')
+//     }
+//     // if(stu_info.course == 'Freelancing'){
+//     //     console.log('Your Class is Scheduled to Monday')
+//     // }
+//     // else{
+//     //     console.log('Not FOund!')
+//     // }
+// }
+// students.map((stu_data) => {
+//     if(stu_data.course == 'Freelancing'){
+//         console.log(stu_data.name)
+//     }
+//     else{
+//         console.log('Nothing found')
+//     }
+// })
+// if(student_info.isStudent){
+//     console.log(student_info.name)
+// }
+// if(student_info.feePaid){
+//     console.log('You can enter in to the class')
+// }
+// let property = "lastName"
+// let checkProperty = property in student_info
+// console.log(checkProperty)
+// let name_1 = "Ahmed"
+// let name_2 = name_1
+
+// console.log(name_1)
+// console.log(name_2)
+// name_2 = "Arsi"
+
+// console.log(name_1)
+// console.log(name_2)
+
+// function Student(name,contact,age,course){
+//    this.name = name
+//    this.contact = contact
+//    this.age = age
+//    this.course = course
+
+// } 
+
+// let student_1 = new Student('Arsii','34324324',18,'Web Designer')
+// let student_2 = new Student('Hasii','5324324',28,'DevOps')
+// let total_students = [student_1,student_2]
+// console.log(total_students)
+
+// let entries = Object.entries(student_1)
+// let vals = Object.values(student_1)
+// let keys = Object.keys(student_1)
+// let freezae_obj = Object.freeze(student_1)
+// student_1.age = 78
+// console.log(student_1)
+// console.log(`Entries ${entries}\nValues ${vals}\nKeys ${keys}`)
+// console.log(entries.length)
+// console.log(keys)
+// console.log(vals)
+
+
+
+// function arr(arr){
+//     const random_Index = Math.floor(Math.random()*arr.length) 
+//     return arr[random_Index]
+// // }
+// let random_ques = arr(total_questions)
+
+
+// let submit = () => {
+// if(input.value == random_ques.correctAnswer){
+//     console.log(input)
+//     student_marks += random_ques.marks
+//     console.log(student_marks)
+//     arr()
+// }
+// }
+
+// let user =  {
+//     name :'arsii',
+//     password:'12321',
+//     email:'abc@gmail.com'
+// }
+
+// function check(){
+//     if(user.email === 'abc@gmail.com' && user.password === '1221'){
+//     window.location.assign('https://chatgpt.com')
+// }
+// else{
+    
+//     let hostname = window.location.hostname()
+//     console.log(hostname)
+// }
+// }
+
+// check()
+// let popupfunc =() =>{
+//     let popup = window.open('https://www.google.com/search?gs_ssp=eJzj4tDP1TewTC-sMGD0YstJzMlMTwQAMXYFgg&q=laliga&rlz=1C1FHFK_en-GBPK1151PK1152&oq=lal&gs_lcrp=EgZjaHJvbWUqDAgBEC4YJxiABBiKBTIGCAAQRRg5MgwIARAuGCcYgAQYigUyDwgCEEUYOxiDARixAxiABDIMCAMQABhDGIAEGIoFMhAIBBAAGIMBGLEDGIAEGIoFMgoIBRAAGLEDGIAEMgoIBhAAGLEDGIAEMhAIBxAuGIMBGLEDGIAEGIoFMhAICBAAGIMBGLEDGIAEGIoFMgcICRAAGI8C0gEIMjQ5N2owajmoAgawAgHxBdmv_ZE0nfu_&sourceid=chrome&ie=UTF-8#sie=lg;/g/11x7mwkym8;2;/m/09gqx;bs;hd;;;;2025-08-31T19:30:00Z',"laliga","width=300px,height=500px")
+//     if(!popup){
+//         alert('Unblock your popup')
+//     }
+//     else{
+//         console.log(popup)
+//     }
+// }
+
+// let obj = {
+//     name:'arsii',
+//     class:'222',
+//     id:2132132
+// }
+
+// let arr = [
+//     {
+//         name:'shah_khaan',
+//         id:23432423,
+//         age:21,
+//         assignment:'done'
+//     },
+//     {
+//         name:'shah_g',
+//         id:23432423,
+//         age:50,
+//         assignment:'done'
+//     },
+//     {
+//         name:'shah',
+//         id:23432423,
+//         age:32,
+//         assignment:'none'
+//     }
+// ]
+
+// arr.forEach((my_arr) => {
+//     if(my_arr.age > 25){
+
+//         console.log(my_arr)
+//     }
+// })
+
+// my_arr_ids = arr.map((my_arr) => {
+//     return my_arr.id
+// })
+// console.log(my_arr_ids) // map() always reurn array, in array it always return something like ig id is empty it waill return undefined
+
+// let assignment_done_students = arr.filter((my_arr) => {
+//    my_arr.assignment == 'done'? console.log('Great Students'): console.log('L Students')
+// })
+
+// // filter retirns the whole object of only filter arr
+
+// let f_name = arr.find((my_arr) => {
+//     return my_arr.name
+// })
+
+// console.log(f_name) // find will reurn only only one value and that is first value
+
+// let findindex = arr.findIndex((my_arr) => {
+//     my_arr.name == 'shah'? console.log('He is real'): console.log('Fake') 
+// })
+
+let items = [
+    {
+        id: 1,
+        itemName: "Laptop",
+        category: "Electronics",
+        price: 850,
+        inStock: true,
+        userAge:23
+    },
+    { id: 2, itemName: "Smartphone", category: "Electronics", price: 500, inStock: true,userAge:12 },
+    { id: 3, itemName: "Desk Chair", category: "Furniture", price: 120, inStock: false,userAge:32 },
+    { id: 4, itemName: "Wrist Watch", category: "Accessories", price: 75, inStock: true,userAge:17 },
+    { id: 5, itemName: "Backpack", category: "Bags", price: 45, inStock: true,userAge:54 },
+    { id: 6, itemName: "Bluetooth Speaker", category: "Electronics", price: 60, inStock: true,userAge:55 },
+    { id: 7, itemName: "Running Shoes", category: "Footwear", price: 95, inStock: false,userAge:8 },
+    { id: 8, itemName: "Notebook", category: "Stationery", price: 5, inStock: true,userAge:65 },
+    { id: 9, itemName: "Coffee Mug", category: "Kitchen", price: 12, inStock: true,userAge:22 },
+    { id: 10, itemName: "Table Lamp", category: "Furniture", price: 40, inStock: false,userAge:33 }
+];
+
+
+let invoices = [
+    {
+        invoiceId: 101,
+        itemId: 1,
+        // itemPrice:---
+        quantity: 2,
+        totalPrice: 1700,
+        date: "2025-09-01"
+    },
+    { invoiceId: 102, itemId: 3, quantity: 1, totalPrice: 120, date: "2025-09-02" },
+    { invoiceId: 103, itemId: 5, quantity: 4, totalPrice: 180, date: "2025-09-02" },
+    { invoiceId: 104, itemId: 2, quantity: 1, totalPrice: 500, date: "2025-09-03" },
+    { invoiceId: 105, itemId: 7, quantity: 2, totalPrice: 190, date: "2025-09-03" },
+    { invoiceId: 106, itemId: 4, quantity: 3, totalPrice: 225, date: "2025-09-04" },
+    { invoiceId: 107, itemId: 8, quantity: 10, totalPrice: 50, date: "2025-09-04" },
+    { invoiceId: 108, itemId: 9, quantity: 6, totalPrice: 72, date: "2025-09-05" },
+    { invoiceId: 109, itemId: 10, quantity: 2, totalPrice: 80, date: "2025-09-05" },
+    { invoiceId: 110, itemId: 6, quantity: 1, totalPrice: 60, date: "2025-09-06" },
+    { invoiceId: 111, itemId: 2, quantity: 2, totalPrice: 1000, date: "2025-09-06" },
+    { invoiceId: 112, itemId: 5, quantity: 1, totalPrice: 45, date: "2025-09-07" },
+    { invoiceId: 113, itemId: 1, quantity: 3, totalPrice: 2550, date: "2025-09-07" },
+    { invoiceId: 114, itemId: 9, quantity: 8, totalPrice: 96, date: "2025-09-08" },
+    { invoiceId: 115, itemId: 7, quantity: 1, totalPrice: 95, date: "2025-09-08" },
+    { invoiceId: 116, itemId: 6, quantity: 4, totalPrice: 240, date: "2025-09-09" },
+    { invoiceId: 117, itemId: 8, quantity: 15, totalPrice: 75, date: "2025-09-09" },
+    { invoiceId: 118, itemId: 10, quantity: 3, totalPrice: 120, date: "2025-09-10" },
+    { invoiceId: 119, itemId: 4, quantity: 2, totalPrice: 150, date: "2025-09-10" },
+    { invoiceId: 120, itemId: 3, quantity: 5, totalPrice: 600, date: "2025-09-11" }
+];
+
+// let item_id = invoices.forEach((invoices) => {
+//      let inner_item_id = invoices.itemId // single invoice id
+//     //  console.log(inner_item_id)
+//      let find_id = items.find((items) => items.id == inner_item_id ? items : undefined
+//         // console.log(ite)
+//         //  if(items.id == inner_item_id){
+//         //      return items
+//         //  }
+//      )
+
+//      invoices.price_per_item = find_id.price
+//     //  items.price_per_item = find_id.price
+   
+// })
+
+// // console.log(items)
+// console.log(invoices)
+
+
+
+// let some_method = items.some((x) => {
+//     if(x.inStock){
+//         return x
+//     }
+// })
+// //  ----------------------- in some method if even a single item in array contains instock == true it will return true ------------------------
+
+// // console.log(some_method)
+
+// let every_method =  items.every((y) => {
+//     if(y.inStock){
+//         return y
+//     }
+// })
+
+// // console.log(every_method)
+
+// // --------------------- in every if an array contains all item.instock(in out situation) == true it will return true if even a single item .instock contains == false it will return false
+// let amount = 0
+// let reduce_method = items.reduce((x,y) => {
+//      console.log(x) // x is the 3rd param and it holds 0 rn
+//     //  console.log(y) // y is object / array
+//     return x += y.price
+// },amount)
+
+// console.log(reduce_method)
+
+
+// let grouped_data = items.reduce((x,y) => {
+//     // console.log(x)
+//     // console.log(y)
+//     if(x[y.category]){
+//         x[y.category].push(y)
+//     }
+//     else{
+//         x[y.category] = [y]
+
+//     }
+//     return x
+// },{}) 
+
+// console.log(grouped_data)
+
+// let grouped_data = items.reduce((x,y) => {
+//     if(y.userAge < 18){
+//         if(x.underAge){
+
+//             x.underAge.push(y)
+//         }
+//         else{
+//             x.underAge = [y]
+//         }
+//     }
+//     else if (y.userAge <= 50){
+//     //    x[y.userAge.eligible].push(y)
+//        if(x.eligible){
+//          x.eligible.push(y)
+//        }
+//        else{
+//         x.eligible = [y]
+//        }
+//     }
+//     else if(y.userAge > 50){
+//           if(x.overAge){
+//             x.overAge.push(y)
+//           }
+//           else{
+//             x.overAge = [y]
+//           }
+//     }   
+//     return x
+    
+//     }
+// ,{})
+
+// console.group(grouped_data)
+
+
+// ---------------------- Promises -------------------
+
+// let getdata = () => {
+//     return new Promise((resolve,reject) => {
+//         setTimeout(() => {
+//           let a = [
+//             {
+//                 id:2
+//             },
+//             {
+//                 id:32
+//             }
+//         ]
+//        if(a.length){
+//         resolve(a)
+//        }
+//        else{
+//         reject('Not found')
+//        }  
+//         },3000)
+//     })
+// }
+
+// let data = async () => {
+//     let reder_data = await getdata()
+//     console.log(reder_data)
+// }
+// data()
+
+// let inp = document.getElementById('inp');
+
+// let email_validation = () => {
+// let reges = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+
+//     if(inp.value.match(reges)){
+//         console.log('Correct')
+//     }
+//     else{
+//         console.log('Error')
+//     }
+
+// }
+
+// //------- Check Form Validation in book -----------
+
+
+
+// // Closures
+
+// let abc_1 = () => {
+//     let a = 2;
+//     let nested_abc_1 = () => {
+//         console.log(a)
+//     }
+//     nested_abc_1()
+// } 
+// abc_1()
+
+// let a = 10;
+
+// let abc = () => {
+//     let a =3
+//     console.log(a)
+//     // Lexical scoping
+
+//     // The answer will be 3 because the consle will check in his closure if there is var a if not then it will check in gllobal scope
+// }
+
+
+// let a = [1,2,3,4,5]
+// let b = [...a]
+// b.push(232)
+// console.log(b)
+
+// let a = {
+//     name:'arsii',
+//     id:123
+// }
+// let b = {...a}
+// b.class = 'CS'
+// console.log(b)
+
+// Rest Operator
+
+// let ab = (...rest) => {
+//     console.log(rest)
+// }
+
+// ab(
+    
+//         {name:'arsii',id:12},
+//         // {name:'arsii_1',id:1312},
+//         // {name:'arsii_2',id:142},
+//         // {name:'arsii_3',id:32},
+    
+// )
+
+//  FFInding Max and Min number in an array
+
+// let a = [21,23,34,213,4]
+// let mx = Math.max(...a)
+// let min = Math.min(...a)
+// console.log(mx)
+// console.log(min)
+
+//  Default Params
+
+// let a  = (param = 3) => {
+//     return param + 3
+// }
+// console.log(a())
